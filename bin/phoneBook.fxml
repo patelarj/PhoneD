@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane opacity="0.87" prefHeight="533.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="phoneBook.DbController">
+   <children>
+      <Button fx:id="myButton" layoutX="472.0" layoutY="174.0" mnemonicParsing="false" onAction="#showContect" text="Load" />
+      <TextArea fx:id="myText" layoutX="14.0" layoutY="126.0" prefHeight="390.0" prefWidth="344.0" />
+      <Label layoutX="48.0" layoutY="103.0" text="ID" />
+      <Label layoutX="119.0" layoutY="103.0" text="Name" />
+      <Label layoutX="205.0" layoutY="103.0" text="Number" />
+      <Button fx:id="mySearch" layoutX="467.0" layoutY="267.0" mnemonicParsing="false" onAction="#searchData" text="Search" />
+      <TextField fx:id="srchText" layoutX="412.0" layoutY="229.0" prefHeight="25.0" prefWidth="163.0" promptText="Search by Name or Number" />
+      <TextField fx:id="nameText" layoutX="412.0" layoutY="351.0" prefHeight="25.0" prefWidth="163.0" promptText="Name" />
+      <TextField fx:id="numText" layoutX="412.0" layoutY="394.0" prefHeight="25.0" prefWidth="163.0" promptText="Number" />
+      <Button fx:id="addContet" layoutX="412.0" layoutY="439.0" mnemonicParsing="false" onAction="#addContect" text="Add" />
+      <Button fx:id="deletButton" layoutX="531.0" layoutY="439.0" mnemonicParsing="false" onAction="#deletContect" text="Delet" />
+      <TextField fx:id="deletText" layoutX="412.0" layoutY="314.0" prefHeight="25.0" prefWidth="163.0" promptText="Enter ID To be Deleted" />
+      <Button fx:id="modButton" layoutX="466.0" layoutY="439.0" mnemonicParsing="false" onAction="#modifyContect" text="Modify" />
+      <Text layoutX="249.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Book" wrappingWidth="163.0">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <Blend opacity="0.13" />
+   </effect>
+</AnchorPane>
